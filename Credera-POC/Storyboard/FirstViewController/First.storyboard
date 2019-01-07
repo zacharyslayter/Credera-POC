@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rUP-nF-5XY">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First-->
+        <scene sceneID="HNR-H7-qqK">
+            <objects>
+                <navigationController id="rUP-nF-5XY" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="First" image="First" id="icp-ac-2vm"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wOU-eu-dog">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZB0-3w-OUa">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="XI3-Hc-Dgg" kind="relationship" relationship="rootViewController" id="xLf-U0-pR8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6om-x9-g1i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-354" y="-222"/>
+        </scene>
+        <!--First View Controller-->
+        <scene sceneID="24B-jy-0lI">
+            <objects>
+                <viewController storyboardIdentifier="FirstViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XI3-Hc-Dgg" customClass="FirstViewController" customModule="Credera_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LQI-XV-05T">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MainTabBarApp: FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9s-uW-QC1">
+                                <rect key="frame" x="88" y="313" width="199" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="O4c-VL-JCa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Z9s-uW-QC1" firstAttribute="centerX" secondItem="LQI-XV-05T" secondAttribute="centerX" id="Lf5-mB-gSG"/>
+                            <constraint firstItem="Z9s-uW-QC1" firstAttribute="leading" secondItem="vNy-5f-uXM" secondAttribute="leading" constant="88" id="PiU-hw-vas"/>
+                            <constraint firstItem="Z9s-uW-QC1" firstAttribute="centerY" secondItem="LQI-XV-05T" secondAttribute="centerY" id="Ym1-h9-ICc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vNy-5f-uXM"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gDg-zH-vS1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dr9-l3-H5Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="541.60000000000002" y="-223.53823088455775"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="First" width="60" height="60"/>
+    </resources>
+</document>

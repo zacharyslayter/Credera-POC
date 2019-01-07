@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Sv6-BP-i1E">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Exw-lH-y0T">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="Sv6-BP-i1E" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OWG-cQ-80v">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tyO-XV-UCG" kind="relationship" relationship="rootViewController" id="RHx-uv-rK1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GAG-i4-Dmj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-679" y="27"/>
+        </scene>
+        <!--Main Single Page App View Controller-->
+        <scene sceneID="20h-Je-FIJ">
+            <objects>
+                <viewController storyboardIdentifier="MainSinglePageAppViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tyO-XV-UCG" customClass="MainSinglePageAppViewController" customModule="Credera_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RmK-Dx-EOj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Single Page App View Controller" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lh-ho-Msh">
+                                <rect key="frame" x="91.5" y="300" width="192" height="66"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="192" id="Eia-GX-Sl6"/>
+                                    <constraint firstAttribute="height" constant="66" id="uld-8H-TkI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7lh-ho-Msh" firstAttribute="centerX" secondItem="huB-Kz-Erp" secondAttribute="centerX" id="et4-x5-o24"/>
+                            <constraint firstItem="7lh-ho-Msh" firstAttribute="centerY" secondItem="huB-Kz-Erp" secondAttribute="centerY" constant="-10.5" id="tqe-9J-RB3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="huB-Kz-Erp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0s8-h9-w8z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kqg-02-LP9" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="126" y="27"/>
+        </scene>
+    </scenes>
+</document>
