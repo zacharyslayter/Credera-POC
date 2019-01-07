@@ -17,5 +17,4 @@ class FirstViewController: UIViewController {
         self.navigationItem.titleView = AppHeaderView()
         
     }
-    
 }

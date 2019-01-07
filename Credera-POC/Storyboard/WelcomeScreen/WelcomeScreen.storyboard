@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Sv6-BP-i1E">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Exw-lH-y0T">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="Sv6-BP-i1E" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OWG-cQ-80v">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tyO-XV-UCG" kind="relationship" relationship="rootViewController" id="RHx-uv-rK1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GAG-i4-Dmj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-679" y="27"/>
+        </scene>
+        <!--Welcome Screen View Controller-->
+        <scene sceneID="20h-Je-FIJ">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="tyO-XV-UCG" customClass="WelcomeScreenViewController" customModule="Credera_POC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RmK-Dx-EOj">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME TO CREDERA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrI-Ff-WUe">
+                                <rect key="frame" x="267" y="118" width="490" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="59" id="6Yz-h9-lGF"/>
+                                    <constraint firstAttribute="width" constant="490" id="dfN-5s-2rH"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="49" id="kTE-9l-JaI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What brings you to our office?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zlo-y4-mCH">
+                                <rect key="frame" x="257" y="178" width="510" height="63"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcomeImage" translatesAutoresizingMaskIntoConstraints="NO" id="IcQ-mV-3i0">
+                                <rect key="frame" x="492" y="20" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="n5H-5I-BiX"/>
+                                    <constraint firstAttribute="width" constant="40" id="yMs-FU-qGr"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pu-jz-PCz">
+                                <rect key="frame" x="282" y="298" width="460" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="460" id="MQ1-8W-12C"/>
+                                    <constraint firstAttribute="height" constant="49" id="ti6-z2-u7u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="INTERVIEW"/>
+                                <connections>
+                                    <action selector="interviewSelected:" destination="tyO-XV-UCG" eventType="touchUpInside" id="jN9-Zv-4oX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odq-Gp-K0I">
+                                <rect key="frame" x="282" y="378" width="460" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="460" id="8WM-GC-imM"/>
+                                    <constraint firstAttribute="height" constant="49" id="Yhg-ee-bKl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="MEETING"/>
+                                <connections>
+                                    <action selector="meetingSelected:" destination="tyO-XV-UCG" eventType="touchUpInside" id="IXI-FB-xpI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pgm-J9-uMU">
+                                <rect key="frame" x="282" y="456" width="460" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="EzI-Z5-nVe"/>
+                                    <constraint firstAttribute="width" constant="460" id="YbF-HU-8Mh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="TO SEEA SPECIFIC PERSON"/>
+                                <connections>
+                                    <action selector="specificPersonSelected:" destination="tyO-XV-UCG" eventType="touchUpInside" id="jgt-26-10K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhh-vm-ihi">
+                                <rect key="frame" x="282" y="534" width="460" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="hcl-CK-ntj"/>
+                                    <constraint firstAttribute="width" constant="460" id="ka2-Co-3Ri"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="DELIVERY"/>
+                                <connections>
+                                    <action selector="deliverySelected:" destination="tyO-XV-UCG" eventType="touchUpInside" id="aKW-aX-9cV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmx-qd-KGb">
+                                <rect key="frame" x="282" y="609" width="460" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="7M0-LN-Qei"/>
+                                    <constraint firstAttribute="width" constant="460" id="aSk-dU-w3w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="OTHER"/>
+                                <connections>
+                                    <action selector="otherSelected:" destination="tyO-XV-UCG" eventType="touchUpInside" id="xFH-Wz-zmy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pgm-J9-uMU" firstAttribute="top" secondItem="odq-Gp-K0I" secondAttribute="bottom" constant="29" id="01F-UL-Naj"/>
+                            <constraint firstItem="rrI-Ff-WUe" firstAttribute="centerX" secondItem="0Pu-jz-PCz" secondAttribute="centerX" id="0j8-JY-qo7"/>
+                            <constraint firstItem="IcQ-mV-3i0" firstAttribute="centerX" secondItem="huB-Kz-Erp" secondAttribute="centerX" id="3LX-Wa-Ioz"/>
+                            <constraint firstItem="IcQ-mV-3i0" firstAttribute="top" secondItem="huB-Kz-Erp" secondAttribute="top" id="3yr-u6-btT"/>
+                            <constraint firstItem="Zlo-y4-mCH" firstAttribute="centerX" secondItem="0Pu-jz-PCz" secondAttribute="centerX" id="GV6-xr-ih2"/>
+                            <constraint firstItem="rrI-Ff-WUe" firstAttribute="centerX" secondItem="dmx-qd-KGb" secondAttribute="centerX" id="JTZ-HB-fjt"/>
+                            <constraint firstItem="huB-Kz-Erp" firstAttribute="bottom" secondItem="dmx-qd-KGb" secondAttribute="bottom" constant="110" id="LFr-eT-8gH"/>
+                            <constraint firstItem="Uhh-vm-ihi" firstAttribute="top" secondItem="Pgm-J9-uMU" secondAttribute="bottom" constant="29" id="MM8-qB-dNk"/>
+                            <constraint firstItem="Zlo-y4-mCH" firstAttribute="top" secondItem="rrI-Ff-WUe" secondAttribute="bottom" constant="1" id="OKC-RA-S0N"/>
+                            <constraint firstItem="rrI-Ff-WUe" firstAttribute="centerX" secondItem="Uhh-vm-ihi" secondAttribute="centerX" id="W17-ep-HEn"/>
+                            <constraint firstItem="Zlo-y4-mCH" firstAttribute="leading" secondItem="huB-Kz-Erp" secondAttribute="leading" constant="257" id="WVO-4H-6b7"/>
+                            <constraint firstItem="dmx-qd-KGb" firstAttribute="top" secondItem="Uhh-vm-ihi" secondAttribute="bottom" constant="26" id="hxE-sQ-1pJ"/>
+                            <constraint firstItem="rrI-Ff-WUe" firstAttribute="centerX" secondItem="Pgm-J9-uMU" secondAttribute="centerX" id="kXX-yn-8bN"/>
+                            <constraint firstItem="rrI-Ff-WUe" firstAttribute="centerX" secondItem="odq-Gp-K0I" secondAttribute="centerX" id="nIh-AH-ZUA"/>
+                            <constraint firstItem="0Pu-jz-PCz" firstAttribute="top" secondItem="Zlo-y4-mCH" secondAttribute="bottom" constant="57" id="nqs-mH-pSX"/>
+                            <constraint firstItem="rrI-Ff-WUe" firstAttribute="top" secondItem="huB-Kz-Erp" secondAttribute="top" constant="98" id="oj8-ng-O4F"/>
+                            <constraint firstItem="odq-Gp-K0I" firstAttribute="top" secondItem="0Pu-jz-PCz" secondAttribute="bottom" constant="31" id="rUD-WW-5LO"/>
+                            <constraint firstItem="rrI-Ff-WUe" firstAttribute="centerX" secondItem="huB-Kz-Erp" secondAttribute="centerX" id="tIK-6g-JIc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="huB-Kz-Erp"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0s8-h9-w8z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kqg-02-LP9" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125.39062499999999" y="25.78125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="welcomeImage" width="137.1199951171875" height="137.1199951171875"/>
+    </resources>
+</document>
