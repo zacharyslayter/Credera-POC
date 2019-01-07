@@ -18,8 +18,8 @@ class WelcomeScreenViewController: UIViewController {
     
     @IBAction func interviewSelected(_ sender: Any) {
         let storyBoard : UIStoryboard = UIStoryboard(name: "First", bundle:nil)
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "FirstViewController") as! FirstViewController
-        self.present(nextViewController, animated:true, completion:nil)
+        let interviewVC = storyBoard.instantiateViewController(withIdentifier: "FirstViewController") as! FirstViewController
+        self.navigationController?.pushViewController(interviewVC, animated: true)
     }
     
     @IBAction func meetingSelected(_ sender: Any) {
@@ -28,19 +28,19 @@ class WelcomeScreenViewController: UIViewController {
     
     @IBAction func specificPersonSelected(_ sender: Any) {
         let storyBoard : UIStoryboard = UIStoryboard(name: "First", bundle:nil)
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "FirstViewController") as! FirstViewController
-        self.present(nextViewController, animated:true, completion:nil)
+        let personVC = storyBoard.instantiateViewController(withIdentifier: "FirstViewController") as! FirstViewController
+        self.navigationController?.pushViewController(interviewVC, animated: true)
     }
     
     @IBAction func deliverySelected(_ sender: Any) {
         let storyBoard : UIStoryboard = UIStoryboard(name: "First", bundle:nil)
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "FirstViewController") as! FirstViewController
-        self.present(nextViewController, animated:true, completion:nil)
+        let deliveryVC = storyBoard.instantiateViewController(withIdentifier: "FirstViewController") as! FirstViewController
+        self.navigationController?.pushViewController(interviewVC, animated: true)
     }
     
     @IBAction func otherSelected(_ sender: Any) {
         let storyBoard : UIStoryboard = UIStoryboard(name: "First", bundle:nil)
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "FirstViewController") as! FirstViewController
-        self.present(nextViewController, animated:true, completion:nil)
+        let otherVC = storyBoard.instantiateViewController(withIdentifier: "FirstViewController") as! FirstViewController
+        self.navigationController?.pushViewController(interviewVC, animated: true)
     }
 }
