@@ -12,6 +12,34 @@ import UIKit
 class WelcomeScreenViewController: UIViewController {
     
     
+    @IBOutlet var interviewButton: UIButton!
+    @IBOutlet var meetingButton: UIButton!
+    @IBOutlet var personButton: UIButton!
+    @IBOutlet var deliveryButton: UIButton!
+    @IBOutlet var otherButton: UIButton!
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        interviewButton.layer.borderColor = Constants.ColorScheme.lipstick.cgColor
+        meetingButton.layer.borderColor = Constants.ColorScheme.lipstick.cgColor
+        personButton.layer.borderColor = Constants.ColorScheme.lipstick.cgColor
+        deliveryButton.layer.borderColor = Constants.ColorScheme.lipstick.cgColor
+        otherButton.layer.borderColor = Constants.ColorScheme.lipstick.cgColor
+        
+        interviewButton.layer.borderWidth = 2
+        meetingButton.layer.borderWidth = 2
+        personButton.layer.borderWidth = 2
+        deliveryButton.layer.borderWidth = 2
+        otherButton.layer.borderWidth = 2
+        
+        interviewButton.layer.cornerRadius = 5
+        meetingButton.layer.cornerRadius = 5
+        personButton.layer.cornerRadius = 5
+        deliveryButton.layer.cornerRadius = 5
+        otherButton.layer.cornerRadius = 5
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -44,3 +72,4 @@ class WelcomeScreenViewController: UIViewController {
         self.navigationController?.pushViewController(otherVC, animated: true)
     }
 }
+

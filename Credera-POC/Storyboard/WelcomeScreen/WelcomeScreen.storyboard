@@ -152,6 +152,13 @@
                         <viewLayoutGuide key="safeArea" id="huB-Kz-Erp"/>
                     </view>
                     <navigationItem key="navigationItem" id="0s8-h9-w8z"/>
+                    <connections>
+                        <outlet property="deliveryButton" destination="Uhh-vm-ihi" id="di4-6x-V7t"/>
+                        <outlet property="interviewButton" destination="0Pu-jz-PCz" id="WuJ-ZS-jA1"/>
+                        <outlet property="meetingButton" destination="odq-Gp-K0I" id="U8B-BT-YRn"/>
+                        <outlet property="otherButton" destination="dmx-qd-KGb" id="SEZ-kH-Ykh"/>
+                        <outlet property="personButton" destination="Pgm-J9-uMU" id="x6U-4M-8W9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kqg-02-LP9" sceneMemberID="firstResponder"/>
             </objects>
