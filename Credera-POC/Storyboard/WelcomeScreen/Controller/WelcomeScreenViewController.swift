@@ -29,18 +29,18 @@ class WelcomeScreenViewController: UIViewController {
     @IBAction func specificPersonSelected(_ sender: Any) {
         let storyBoard : UIStoryboard = UIStoryboard(name: "First", bundle:nil)
         let personVC = storyBoard.instantiateViewController(withIdentifier: "FirstViewController") as! FirstViewController
-        self.navigationController?.pushViewController(interviewVC, animated: true)
+        self.navigationController?.pushViewController(personVC, animated: true)
     }
     
     @IBAction func deliverySelected(_ sender: Any) {
         let storyBoard : UIStoryboard = UIStoryboard(name: "First", bundle:nil)
         let deliveryVC = storyBoard.instantiateViewController(withIdentifier: "FirstViewController") as! FirstViewController
-        self.navigationController?.pushViewController(interviewVC, animated: true)
+        self.navigationController?.pushViewController(deliveryVC, animated: true)
     }
     
     @IBAction func otherSelected(_ sender: Any) {
         let storyBoard : UIStoryboard = UIStoryboard(name: "First", bundle:nil)
         let otherVC = storyBoard.instantiateViewController(withIdentifier: "FirstViewController") as! FirstViewController
-        self.navigationController?.pushViewController(interviewVC, animated: true)
+        self.navigationController?.pushViewController(otherVC, animated: true)
     }
 }
