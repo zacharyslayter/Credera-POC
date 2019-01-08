@@ -22,6 +22,7 @@ class Constants {
         static let tertiary = UIColor(red: 245, green: 231, blue: 210)
         static let quaternary = UIColor(red: 1, green: 1, blue: 1)
         static let lipstick = UIColor(red:195, green: 32,blue: 50)
+        static let warmGray = UIColor(red: 155, green: 155, blue: 155)
     }
     
 }

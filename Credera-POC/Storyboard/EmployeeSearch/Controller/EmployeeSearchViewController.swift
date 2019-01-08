@@ -40,6 +40,9 @@ class EmployeeSearchViewController: UIViewController {
         
     }
 
+    @IBAction func onBackPressed(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
 }
 
 extension EmployeeSearchViewController : UITextFieldDelegate {
@@ -51,10 +54,10 @@ extension EmployeeSearchViewController : UITextFieldDelegate {
         
         if textField == searchTextField {
             if !String(currentText).isEmpty {
-                continueButton.backgroundColor = UIColor.red
+                continueButton.backgroundColor = Constants.ColorScheme.lipstick
                 continueButton.isEnabled = true
             } else {
-                continueButton.backgroundColor = UIColor.gray
+                continueButton.backgroundColor = Constants.ColorScheme.warmGray
                 continueButton.isEnabled = false
             }
         }

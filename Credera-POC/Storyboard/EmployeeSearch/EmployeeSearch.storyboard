@@ -40,7 +40,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Te-NO-U0O">
                                 <rect key="frame" x="282" y="433" width="460" height="49"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="3BT-k4-5VV"/>
                                     <constraint firstAttribute="width" constant="460" id="sZ2-64-Vyl"/>
@@ -53,6 +53,17 @@
                                     <action selector="continueButtonPressed:" destination="haO-iB-CR9" eventType="touchUpInside" id="uST-P2-699"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7L-Q1-Vxy">
+                                <rect key="frame" x="30" y="693" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="Vhi-l7-Xjo"/>
+                                    <constraint firstAttribute="height" constant="45" id="dBS-jP-41T"/>
+                                </constraints>
+                                <state key="normal" title="BACK IT UP"/>
+                                <connections>
+                                    <action selector="onBackPressed:" destination="haO-iB-CR9" eventType="touchUpInside" id="SHa-yq-jxj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -62,8 +73,10 @@
                             <constraint firstItem="2Te-NO-U0O" firstAttribute="top" secondItem="HjD-uO-ZSf" secondAttribute="bottom" constant="36" id="Cv8-P9-rqP"/>
                             <constraint firstItem="HjD-uO-ZSf" firstAttribute="top" secondItem="lme-QQ-v5p" secondAttribute="bottom" constant="57" id="J0l-BN-lxj"/>
                             <constraint firstItem="p0o-Vr-4hR" firstAttribute="trailing" secondItem="HjD-uO-ZSf" secondAttribute="trailing" constant="282" id="Yx1-tz-MhC"/>
+                            <constraint firstItem="R7L-Q1-Vxy" firstAttribute="leading" secondItem="p0o-Vr-4hR" secondAttribute="leading" constant="30" id="ZNM-Ok-Qmb"/>
                             <constraint firstItem="p0o-Vr-4hR" firstAttribute="trailing" secondItem="2Te-NO-U0O" secondAttribute="trailing" constant="282" id="grY-Eh-aL6"/>
                             <constraint firstItem="lme-QQ-v5p" firstAttribute="leading" secondItem="p0o-Vr-4hR" secondAttribute="leading" constant="132" id="klp-3p-EJ2"/>
+                            <constraint firstItem="p0o-Vr-4hR" firstAttribute="bottom" secondItem="R7L-Q1-Vxy" secondAttribute="bottom" constant="30" id="nRO-UE-fvM"/>
                             <constraint firstItem="p0o-Vr-4hR" firstAttribute="trailing" secondItem="lme-QQ-v5p" secondAttribute="trailing" constant="131" id="zcJ-IT-jRl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="p0o-Vr-4hR"/>
