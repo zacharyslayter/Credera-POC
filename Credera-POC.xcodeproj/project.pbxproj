@@ -11,6 +11,8 @@
 		254D640D7D1F20AA98129B8C /* Pods_Credera_POCUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D67155F2C77581A827CC398C /* Pods_Credera_POCUITests.framework */; };
 		26CA08FD8CA87D2D317CBF07 /* Pods_Credera_POCTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 707A9735E6021B38A14AACD4 /* Pods_Credera_POCTests.framework */; };
 		3E617F5366241A675C34EAF3 /* Pods_Credera_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 776C2608FC32935341C444AC /* Pods_Credera_iOSTests.framework */; };
+		4971CD6921E4F12800B53CA4 /* ThankYouViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4971CD6821E4F12800B53CA4 /* ThankYouViewController.swift */; };
+		4971CD6B21E4F20300B53CA4 /* ThankYou.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4971CD6A21E4F20300B53CA4 /* ThankYou.storyboard */; };
 		5910781621DD1FC60017CA21 /* WelcomeScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5910781521DD1FC60017CA21 /* WelcomeScreen.storyboard */; };
 		5910781B21DD21900017CA21 /* NavigationController+Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5910781A21DD21900017CA21 /* NavigationController+Transitions.swift */; };
 		5910781E21DD22770017CA21 /* WelcomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5910781D21DD22770017CA21 /* WelcomeScreenViewController.swift */; };
@@ -56,6 +58,8 @@
 		0C98E09547A52D9E4F315F20 /* Pods_Credera_POC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Credera_POC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ECD9547B805E1A4F7BBD886 /* Pods-Credera-POCUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-POCUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-POCUITests/Pods-Credera-POCUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		113B30E6AC1F7798CBA4AAD8 /* Pods-Credera-POC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-POC.release.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-POC/Pods-Credera-POC.release.xcconfig"; sourceTree = "<group>"; };
+		4971CD6821E4F12800B53CA4 /* ThankYouViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThankYouViewController.swift; sourceTree = "<group>"; };
+		4971CD6A21E4F20300B53CA4 /* ThankYou.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ThankYou.storyboard; sourceTree = "<group>"; };
 		5910781521DD1FC60017CA21 /* WelcomeScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WelcomeScreen.storyboard; sourceTree = "<group>"; };
 		5910781A21DD21900017CA21 /* NavigationController+Transitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationController+Transitions.swift"; sourceTree = "<group>"; };
 		5910781D21DD22770017CA21 /* WelcomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeScreenViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +134,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4971CD6421E4F0DE00B53CA4 /* ThankYou */ = {
+			isa = PBXGroup;
+			children = (
+				4971CD6A21E4F20300B53CA4 /* ThankYou.storyboard */,
+				4971CD6721E4F10500B53CA4 /* Controller */,
+			);
+			path = ThankYou;
+			sourceTree = "<group>";
+		};
+		4971CD6721E4F10500B53CA4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4971CD6821E4F12800B53CA4 /* ThankYouViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		5910781421DD1F990017CA21 /* WelcomeScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -283,6 +304,7 @@
 				AF1B0C0821E405650008ADF6 /* EmployeeSearch */,
 				598E173F219CDB04002AC3EC /* LaunchScreen */,
 				5910781421DD1F990017CA21 /* WelcomeScreen */,
+				4971CD6421E4F0DE00B53CA4 /* ThankYou */,
 				5910782421DD26190017CA21 /* DefaultViewController */,
 				5910782521DD26250017CA21 /* SecondViewController */,
 			);
@@ -518,6 +540,7 @@
 				5910782721DD263C0017CA21 /* First.storyboard in Resources */,
 				5910781621DD1FC60017CA21 /* WelcomeScreen.storyboard in Resources */,
 				5949D1BA219CBBAE006D2FF0 /* LaunchScreen.storyboard in Resources */,
+				4971CD6B21E4F20300B53CA4 /* ThankYou.storyboard in Resources */,
 				5949D1B7219CBBAE006D2FF0 /* Assets.xcassets in Resources */,
 				5910783721DD2B170017CA21 /* Second.storyboard in Resources */,
 				A480A13121E5018500EA32E5 /* ScanQRCode.storyboard in Resources */,
@@ -631,6 +654,7 @@
 				A480A12C21E4EBF200EA32E5 /* ErrorScreenViewController.swift in Sources */,
 				AF1B0C0D21E40C840008ADF6 /* EmployeeSearchViewController.swift in Sources */,
 				5910783221DD29E00017CA21 /* UIColor+Extension.swift in Sources */,
+				4971CD6921E4F12800B53CA4 /* ThankYouViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
