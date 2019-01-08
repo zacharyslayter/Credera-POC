@@ -29,6 +29,8 @@
 		9C4C52AF66CA12EDB08789EF /* Pods_Credera_POC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C98E09547A52D9E4F315F20 /* Pods_Credera_POC.framework */; };
 		AF1B0C0A21E406A20008ADF6 /* EmployeeSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF1B0C0921E406A20008ADF6 /* EmployeeSearch.storyboard */; };
 		AF1B0C0D21E40C840008ADF6 /* EmployeeSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1B0C0C21E40C840008ADF6 /* EmployeeSearchViewController.swift */; };
+		AF1B0C1021E503640008ADF6 /* GuestNameInput.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF1B0C0F21E503640008ADF6 /* GuestNameInput.storyboard */; };
+		AF1B0C1321E5038B0008ADF6 /* GuestNameInputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1B0C1221E5038B0008ADF6 /* GuestNameInputController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		A550CE8A5977D50EB3D4A187 /* Pods-Credera-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOS/Pods-Credera-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		AF1B0C0921E406A20008ADF6 /* EmployeeSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmployeeSearch.storyboard; sourceTree = "<group>"; };
 		AF1B0C0C21E40C840008ADF6 /* EmployeeSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeSearchViewController.swift; sourceTree = "<group>"; };
+		AF1B0C0F21E503640008ADF6 /* GuestNameInput.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GuestNameInput.storyboard; sourceTree = "<group>"; };
+		AF1B0C1221E5038B0008ADF6 /* GuestNameInputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestNameInputController.swift; sourceTree = "<group>"; };
 		B099B06EF8A37A1DC08D3C01 /* Pods-Credera-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOSUITests/Pods-Credera-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B38FA4083BC15F623697D470 /* Pods-Credera-POCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-POCTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-POCTests/Pods-Credera-POCTests.release.xcconfig"; sourceTree = "<group>"; };
 		CE3D65C0BBA22D3F471C43BA /* Pods-Credera-POCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-POCUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-POCUITests/Pods-Credera-POCUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -270,6 +274,7 @@
 		598E173B219CDA81002AC3EC /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				AF1B0C0E21E503300008ADF6 /* GuestInput */,
 				AF1B0C0821E405650008ADF6 /* EmployeeSearch */,
 				598E173F219CDB04002AC3EC /* LaunchScreen */,
 				5910781421DD1F990017CA21 /* WelcomeScreen */,
@@ -338,6 +343,23 @@
 			isa = PBXGroup;
 			children = (
 				AF1B0C0C21E40C840008ADF6 /* EmployeeSearchViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		AF1B0C0E21E503300008ADF6 /* GuestInput */ = {
+			isa = PBXGroup;
+			children = (
+				AF1B0C0F21E503640008ADF6 /* GuestNameInput.storyboard */,
+				AF1B0C1121E5036D0008ADF6 /* Controller */,
+			);
+			path = GuestInput;
+			sourceTree = "<group>";
+		};
+		AF1B0C1121E5036D0008ADF6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF1B0C1221E5038B0008ADF6 /* GuestNameInputController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -471,6 +493,7 @@
 			files = (
 				AF1B0C0A21E406A20008ADF6 /* EmployeeSearch.storyboard in Resources */,
 				5910782721DD263C0017CA21 /* First.storyboard in Resources */,
+				AF1B0C1021E503640008ADF6 /* GuestNameInput.storyboard in Resources */,
 				5910781621DD1FC60017CA21 /* WelcomeScreen.storyboard in Resources */,
 				5949D1BA219CBBAE006D2FF0 /* LaunchScreen.storyboard in Resources */,
 				5949D1B7219CBBAE006D2FF0 /* Assets.xcassets in Resources */,
@@ -580,6 +603,7 @@
 				5910783021DD299F0017CA21 /* Constants.swift in Sources */,
 				5910782E21DD29410017CA21 /* XibView.swift in Sources */,
 				5949D1AD219CBBAC006D2FF0 /* AppDelegate.swift in Sources */,
+				AF1B0C1321E5038B0008ADF6 /* GuestNameInputController.swift in Sources */,
 				5910783A21DD2BD80017CA21 /* SecondViewController.swift in Sources */,
 				AF1B0C0D21E40C840008ADF6 /* EmployeeSearchViewController.swift in Sources */,
 				5910783221DD29E00017CA21 /* UIColor+Extension.swift in Sources */,

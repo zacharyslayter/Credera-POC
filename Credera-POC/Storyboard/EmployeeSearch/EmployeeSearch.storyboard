@@ -83,6 +83,7 @@
                     </view>
                     <connections>
                         <outlet property="continueButton" destination="2Te-NO-U0O" id="bcD-Z1-07h"/>
+                        <outlet property="questionLabel" destination="lme-QQ-v5p" id="tI0-V4-C5U"/>
                         <outlet property="searchTextField" destination="HjD-uO-ZSf" id="cBN-7x-zbw"/>
                     </connections>
                 </viewController>
