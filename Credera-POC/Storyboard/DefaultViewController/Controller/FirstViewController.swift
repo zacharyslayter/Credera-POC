@@ -12,9 +12,6 @@ import UIKit
 class FirstViewController: UIViewController {
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        //self.navigationItem.titleView = AppHeaderView()
-        
+        super.viewDidLoad()        
     }
 }
