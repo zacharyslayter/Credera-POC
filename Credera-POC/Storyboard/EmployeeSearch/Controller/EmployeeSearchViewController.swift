@@ -7,18 +7,23 @@
 //
 
 import UIKit
+import Foundation
 
 class EmployeeSearchViewController: UIViewController {
 
     
-    @IBOutlet weak var searchTextField: UITextField!
+    @IBOutlet var searchTextField: UITextField!
     @IBOutlet weak var continueButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        searchTextField.delegate = self
+        NotificationCenter.default.addObserver(self, selector: #selector(EmployeeSearchViewController.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(EmployeeSearchViewController.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
         setupUI()
     }
     
@@ -27,6 +32,7 @@ class EmployeeSearchViewController: UIViewController {
         continueButton.layer.cornerRadius = 5
         continueButton.layer.borderWidth = 1
         continueButton.layer.borderColor = UIColor.clear.cgColor
+        continueButton.isEnabled = false
         self.hideKeyboardWhenTappedAround()
     }
     
@@ -37,6 +43,7 @@ class EmployeeSearchViewController: UIViewController {
 }
 
 extension EmployeeSearchViewController : UITextFieldDelegate {
+    
     public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         var currentText: NSString = textField.text as NSString? ?? ""
@@ -45,7 +52,10 @@ extension EmployeeSearchViewController : UITextFieldDelegate {
         if textField == searchTextField {
             if !String(currentText).isEmpty {
                 continueButton.backgroundColor = UIColor.red
-                
+                continueButton.isEnabled = true
+            } else {
+                continueButton.backgroundColor = UIColor.gray
+                continueButton.isEnabled = false
             }
         }
         
@@ -71,6 +81,20 @@ extension EmployeeSearchViewController {
         view.endEditing(true)
     }
     
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height/2
+            }
+        }
+    }
+        
     
-   
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
+    }
+
 }
+
