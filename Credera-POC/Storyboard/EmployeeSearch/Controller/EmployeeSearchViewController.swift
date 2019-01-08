@@ -29,9 +29,10 @@ class EmployeeSearchViewController: UIViewController {
     
     func setupUI() {
         searchTextField.borderStyle = UITextField.BorderStyle.roundedRect
+        searchTextField.layer.borderColor = Constants.ColorScheme.warmGray.cgColor
         continueButton.layer.cornerRadius = 5
         continueButton.layer.borderWidth = 1
-        continueButton.layer.borderColor = UIColor.clear.cgColor
+        continueButton.layer.borderColor = Constants.ColorScheme.warmGray.cgColor
         continueButton.isEnabled = false
         self.hideKeyboardWhenTappedAround()
     }
