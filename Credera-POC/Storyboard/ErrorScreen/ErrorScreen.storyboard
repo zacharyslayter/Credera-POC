@@ -53,7 +53,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoJ-Ko-9PW">
-                                <rect key="frame" x="28" y="694" width="45" height="45"/>
+                                <rect key="frame" x="30" y="693" width="45" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="dZP-cx-PQ1"/>
                                     <constraint firstAttribute="height" constant="45" id="k0y-aN-Vzp"/>
@@ -68,11 +68,11 @@
                         <constraints>
                             <constraint firstItem="DbQ-bQ-Bew" firstAttribute="centerX" secondItem="YaW-RC-cYZ" secondAttribute="centerX" id="1md-8k-7y8"/>
                             <constraint firstItem="BY3-x9-E5l" firstAttribute="top" secondItem="x36-Wp-XIC" secondAttribute="bottom" constant="7" id="2fD-UE-4jM"/>
-                            <constraint firstItem="uoJ-Ko-9PW" firstAttribute="leading" secondItem="YaW-RC-cYZ" secondAttribute="leading" constant="28" id="8X4-yR-bOE"/>
+                            <constraint firstItem="uoJ-Ko-9PW" firstAttribute="leading" secondItem="YaW-RC-cYZ" secondAttribute="leading" constant="30" id="8X4-yR-bOE"/>
                             <constraint firstItem="BY3-x9-E5l" firstAttribute="centerX" secondItem="YaW-RC-cYZ" secondAttribute="centerX" id="Nxg-ER-v8h"/>
                             <constraint firstItem="DbQ-bQ-Bew" firstAttribute="top" secondItem="BY3-x9-E5l" secondAttribute="bottom" constant="41" id="U1e-eM-KxU"/>
                             <constraint firstItem="x36-Wp-XIC" firstAttribute="top" secondItem="YaW-RC-cYZ" secondAttribute="top" constant="205" id="ah2-XS-hUJ"/>
-                            <constraint firstItem="YaW-RC-cYZ" firstAttribute="bottom" secondItem="uoJ-Ko-9PW" secondAttribute="bottom" constant="29" id="ilc-Fk-AiU"/>
+                            <constraint firstItem="YaW-RC-cYZ" firstAttribute="bottom" secondItem="uoJ-Ko-9PW" secondAttribute="bottom" constant="30" id="ilc-Fk-AiU"/>
                             <constraint firstItem="x36-Wp-XIC" firstAttribute="centerX" secondItem="YaW-RC-cYZ" secondAttribute="centerX" id="qSF-Tb-EPr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YaW-RC-cYZ"/>
