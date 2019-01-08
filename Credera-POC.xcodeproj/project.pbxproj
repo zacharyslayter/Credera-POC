@@ -27,6 +27,8 @@
 		5949D1C5219CBBAE006D2FF0 /* Credera_POCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5949D1C4219CBBAE006D2FF0 /* Credera_POCTests.swift */; };
 		5949D1D0219CBBAF006D2FF0 /* Credera_POCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5949D1CF219CBBAF006D2FF0 /* Credera_POCUITests.swift */; };
 		9C4C52AF66CA12EDB08789EF /* Pods_Credera_POC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C98E09547A52D9E4F315F20 /* Pods_Credera_POC.framework */; };
+		A480A12721E4EB7000EA32E5 /* ErrorScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A480A12621E4EB7000EA32E5 /* ErrorScreen.storyboard */; };
+		A480A12C21E4EBF200EA32E5 /* ErrorScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A480A12B21E4EBF200EA32E5 /* ErrorScreenViewController.swift */; };
 		AF1B0C0A21E406A20008ADF6 /* EmployeeSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF1B0C0921E406A20008ADF6 /* EmployeeSearch.storyboard */; };
 		AF1B0C0D21E40C840008ADF6 /* EmployeeSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1B0C0C21E40C840008ADF6 /* EmployeeSearchViewController.swift */; };
 /* End PBXBuildFile section */
@@ -79,6 +81,8 @@
 		776C2608FC32935341C444AC /* Pods_Credera_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Credera_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DE5EA2F7E2553C34C0ED366 /* Pods-Credera-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOS/Pods-Credera-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		9645AC57AFCE99B609B68B96 /* Pods_Credera_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Credera_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A480A12621E4EB7000EA32E5 /* ErrorScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ErrorScreen.storyboard; sourceTree = "<group>"; };
+		A480A12B21E4EBF200EA32E5 /* ErrorScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorScreenViewController.swift; sourceTree = "<group>"; };
 		A550CE8A5977D50EB3D4A187 /* Pods-Credera-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOS/Pods-Credera-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		AF1B0C0921E406A20008ADF6 /* EmployeeSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmployeeSearch.storyboard; sourceTree = "<group>"; };
 		AF1B0C0C21E40C840008ADF6 /* EmployeeSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeSearchViewController.swift; sourceTree = "<group>"; };
@@ -270,6 +274,7 @@
 		598E173B219CDA81002AC3EC /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				A480A12521E4EB3800EA32E5 /* ErrorScreen */,
 				AF1B0C0821E405650008ADF6 /* EmployeeSearch */,
 				598E173F219CDB04002AC3EC /* LaunchScreen */,
 				5910781421DD1F990017CA21 /* WelcomeScreen */,
@@ -323,6 +328,23 @@
 				D67155F2C77581A827CC398C /* Pods_Credera_POCUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A480A12521E4EB3800EA32E5 /* ErrorScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A480A12821E4EBB600EA32E5 /* Controller */,
+				A480A12621E4EB7000EA32E5 /* ErrorScreen.storyboard */,
+			);
+			path = ErrorScreen;
+			sourceTree = "<group>";
+		};
+		A480A12821E4EBB600EA32E5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A480A12B21E4EBF200EA32E5 /* ErrorScreenViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		AF1B0C0821E405650008ADF6 /* EmployeeSearch */ = {
@@ -469,6 +491,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A480A12721E4EB7000EA32E5 /* ErrorScreen.storyboard in Resources */,
 				AF1B0C0A21E406A20008ADF6 /* EmployeeSearch.storyboard in Resources */,
 				5910782721DD263C0017CA21 /* First.storyboard in Resources */,
 				5910781621DD1FC60017CA21 /* WelcomeScreen.storyboard in Resources */,
@@ -581,6 +604,7 @@
 				5910782E21DD29410017CA21 /* XibView.swift in Sources */,
 				5949D1AD219CBBAC006D2FF0 /* AppDelegate.swift in Sources */,
 				5910783A21DD2BD80017CA21 /* SecondViewController.swift in Sources */,
+				A480A12C21E4EBF200EA32E5 /* ErrorScreenViewController.swift in Sources */,
 				AF1B0C0D21E40C840008ADF6 /* EmployeeSearchViewController.swift in Sources */,
 				5910783221DD29E00017CA21 /* UIColor+Extension.swift in Sources */,
 			);
