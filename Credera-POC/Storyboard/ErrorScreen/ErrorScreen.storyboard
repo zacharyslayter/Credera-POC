@@ -48,29 +48,46 @@
                                 <state key="normal" title="BACK TO HOME">
                                     <color key="titleColor" red="0.76470588240000004" green="0.12549019610000001" blue="0.1960784314" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="backToHomeSelected:" destination="OhW-S2-CSt" eventType="touchUpInside" id="Qwm-Dy-Gc0"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j2j-tw-tSi">
-                                <rect key="frame" x="30" y="708" width="40" height="30"/>
-                                <state key="normal" title="BACK"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoJ-Ko-9PW">
+                                <rect key="frame" x="28" y="694" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="dZP-cx-PQ1"/>
+                                    <constraint firstAttribute="height" constant="45" id="k0y-aN-Vzp"/>
+                                </constraints>
+                                <state key="normal" title="backButton" image="backButton"/>
+                                <connections>
+                                    <action selector="backButtonSelected:" destination="OhW-S2-CSt" eventType="touchUpInside" id="Cep-bi-DRW"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="DbQ-bQ-Bew" firstAttribute="centerX" secondItem="YaW-RC-cYZ" secondAttribute="centerX" id="1md-8k-7y8"/>
                             <constraint firstItem="BY3-x9-E5l" firstAttribute="top" secondItem="x36-Wp-XIC" secondAttribute="bottom" constant="7" id="2fD-UE-4jM"/>
+                            <constraint firstItem="uoJ-Ko-9PW" firstAttribute="leading" secondItem="YaW-RC-cYZ" secondAttribute="leading" constant="28" id="8X4-yR-bOE"/>
                             <constraint firstItem="BY3-x9-E5l" firstAttribute="centerX" secondItem="YaW-RC-cYZ" secondAttribute="centerX" id="Nxg-ER-v8h"/>
-                            <constraint firstItem="YaW-RC-cYZ" firstAttribute="bottom" secondItem="j2j-tw-tSi" secondAttribute="bottom" constant="30" id="Red-Hj-aKJ"/>
                             <constraint firstItem="DbQ-bQ-Bew" firstAttribute="top" secondItem="BY3-x9-E5l" secondAttribute="bottom" constant="41" id="U1e-eM-KxU"/>
                             <constraint firstItem="x36-Wp-XIC" firstAttribute="top" secondItem="YaW-RC-cYZ" secondAttribute="top" constant="205" id="ah2-XS-hUJ"/>
-                            <constraint firstItem="j2j-tw-tSi" firstAttribute="leading" secondItem="YaW-RC-cYZ" secondAttribute="leading" constant="30" id="fcD-v4-0q6"/>
+                            <constraint firstItem="YaW-RC-cYZ" firstAttribute="bottom" secondItem="uoJ-Ko-9PW" secondAttribute="bottom" constant="29" id="ilc-Fk-AiU"/>
                             <constraint firstItem="x36-Wp-XIC" firstAttribute="centerX" secondItem="YaW-RC-cYZ" secondAttribute="centerX" id="qSF-Tb-EPr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YaW-RC-cYZ"/>
                     </view>
+                    <connections>
+                        <outlet property="backButton" destination="uoJ-Ko-9PW" id="RJF-do-wpI"/>
+                        <outlet property="backToHomeButton" destination="DbQ-bQ-Bew" id="XDQ-VX-eh1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fP7-fh-ANF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-28.124999999999996" y="98.4375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="backButton" width="45" height="45"/>
+    </resources>
 </document>
