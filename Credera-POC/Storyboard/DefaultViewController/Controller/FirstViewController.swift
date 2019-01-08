@@ -14,7 +14,7 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.titleView = AppHeaderView()
+        //self.navigationItem.titleView = AppHeaderView()
         
     }
 }

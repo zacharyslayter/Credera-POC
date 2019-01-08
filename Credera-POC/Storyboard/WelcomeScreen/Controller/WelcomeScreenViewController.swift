@@ -24,6 +24,9 @@ class WelcomeScreenViewController: UIViewController {
     
     @IBAction func meetingSelected(_ sender: Any) {
         //Go to the who are you meeting with screen
+        let storyboard = UIStoryboard(name: "EmployeeSearch", bundle: nil)
+        let employeeSearchVC = storyboard.instantiateViewController(withIdentifier: "EmployeeSearchViewController") as! EmployeeSearchViewController
+        navigationController?.pushViewController(employeeSearchVC, animated: true)
     }
     
     @IBAction func specificPersonSelected(_ sender: Any) {

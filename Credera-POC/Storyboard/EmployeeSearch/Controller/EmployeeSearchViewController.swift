@@ -16,6 +16,9 @@ class EmployeeSearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
         setupUI()
     }
     
@@ -23,7 +26,7 @@ class EmployeeSearchViewController: UIViewController {
         searchTextField.borderStyle = UITextField.BorderStyle.roundedRect
         continueButton.layer.cornerRadius = 5
         continueButton.layer.borderWidth = 1
-        continueButton.layer.borderColor = UIColor.black.cgColor
+        continueButton.layer.borderColor = UIColor.clear.cgColor
         self.hideKeyboardWhenTappedAround()
     }
     
@@ -34,7 +37,25 @@ class EmployeeSearchViewController: UIViewController {
 }
 
 extension EmployeeSearchViewController : UITextFieldDelegate {
+    public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        var currentText: NSString = textField.text as NSString? ?? ""
+        currentText = currentText.replacingCharacters(in: range, with: string) as NSString
+        
+        if textField == searchTextField {
+            if !String(currentText).isEmpty {
+                continueButton.backgroundColor = UIColor.red
+                
+            }
+        }
+        
+        return true;
+    }
     
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return false
+    }
     
 }
 
@@ -49,6 +70,7 @@ extension EmployeeSearchViewController {
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
+    
     
    
 }
