@@ -70,9 +70,9 @@ class WelcomeScreenViewController: UIViewController {
     }
     
     @IBAction func otherSelected(_ sender: Any) {
-        let storyBoard : UIStoryboard = UIStoryboard(name: "First", bundle:nil)
-        let otherVC = storyBoard.instantiateViewController(withIdentifier: "FirstViewController") as! FirstViewController
-        self.navigationController?.pushViewController(otherVC, animated: true)
+        let storyBoard : UIStoryboard = UIStoryboard(name: "ThankYou", bundle:nil)
+        let thankYouVC = storyBoard.instantiateViewController(withIdentifier: "ThankYouViewController") as! ThankYouViewController
+        self.navigationController?.pushViewController(thankYouVC, animated: true)
     }
 }
 
