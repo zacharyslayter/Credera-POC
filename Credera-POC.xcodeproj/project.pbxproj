@@ -27,6 +27,8 @@
 		5949D1C5219CBBAE006D2FF0 /* Credera_POCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5949D1C4219CBBAE006D2FF0 /* Credera_POCTests.swift */; };
 		5949D1D0219CBBAF006D2FF0 /* Credera_POCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5949D1CF219CBBAF006D2FF0 /* Credera_POCUITests.swift */; };
 		9C4C52AF66CA12EDB08789EF /* Pods_Credera_POC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C98E09547A52D9E4F315F20 /* Pods_Credera_POC.framework */; };
+		AF1B0C0A21E406A20008ADF6 /* EmployeeSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF1B0C0921E406A20008ADF6 /* EmployeeSearch.storyboard */; };
+		AF1B0C0D21E40C840008ADF6 /* EmployeeSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1B0C0C21E40C840008ADF6 /* EmployeeSearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,8 @@
 		7DE5EA2F7E2553C34C0ED366 /* Pods-Credera-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOS/Pods-Credera-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		9645AC57AFCE99B609B68B96 /* Pods_Credera_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Credera_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A550CE8A5977D50EB3D4A187 /* Pods-Credera-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOS/Pods-Credera-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		AF1B0C0921E406A20008ADF6 /* EmployeeSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmployeeSearch.storyboard; sourceTree = "<group>"; };
+		AF1B0C0C21E40C840008ADF6 /* EmployeeSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeSearchViewController.swift; sourceTree = "<group>"; };
 		B099B06EF8A37A1DC08D3C01 /* Pods-Credera-iOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOSUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOSUITests/Pods-Credera-iOSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B38FA4083BC15F623697D470 /* Pods-Credera-POCTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-POCTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-POCTests/Pods-Credera-POCTests.release.xcconfig"; sourceTree = "<group>"; };
 		CE3D65C0BBA22D3F471C43BA /* Pods-Credera-POCUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-POCUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-POCUITests/Pods-Credera-POCUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -266,6 +270,7 @@
 		598E173B219CDA81002AC3EC /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				AF1B0C0821E405650008ADF6 /* EmployeeSearch */,
 				598E173F219CDB04002AC3EC /* LaunchScreen */,
 				5910781421DD1F990017CA21 /* WelcomeScreen */,
 				5910782421DD26190017CA21 /* DefaultViewController */,
@@ -318,6 +323,23 @@
 				D67155F2C77581A827CC398C /* Pods_Credera_POCUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF1B0C0821E405650008ADF6 /* EmployeeSearch */ = {
+			isa = PBXGroup;
+			children = (
+				AF1B0C0921E406A20008ADF6 /* EmployeeSearch.storyboard */,
+				AF1B0C0B21E40C340008ADF6 /* Controller */,
+			);
+			path = EmployeeSearch;
+			sourceTree = "<group>";
+		};
+		AF1B0C0B21E40C340008ADF6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AF1B0C0C21E40C840008ADF6 /* EmployeeSearchViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		B1358001C96A900BEA8211A1 /* Pods */ = {
@@ -447,6 +469,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF1B0C0A21E406A20008ADF6 /* EmployeeSearch.storyboard in Resources */,
 				5910782721DD263C0017CA21 /* First.storyboard in Resources */,
 				5910781621DD1FC60017CA21 /* WelcomeScreen.storyboard in Resources */,
 				5949D1BA219CBBAE006D2FF0 /* LaunchScreen.storyboard in Resources */,
@@ -558,6 +581,7 @@
 				5910782E21DD29410017CA21 /* XibView.swift in Sources */,
 				5949D1AD219CBBAC006D2FF0 /* AppDelegate.swift in Sources */,
 				5910783A21DD2BD80017CA21 /* SecondViewController.swift in Sources */,
+				AF1B0C0D21E40C840008ADF6 /* EmployeeSearchViewController.swift in Sources */,
 				5910783221DD29E00017CA21 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -727,7 +751,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HPYS5PBF55;
+				DEVELOPMENT_TEAM = 7CUS9P87CD;
 				INFOPLIST_FILE = "$(SRCROOT)/Credera-POC/App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -747,7 +771,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HPYS5PBF55;
+				DEVELOPMENT_TEAM = 7CUS9P87CD;
 				INFOPLIST_FILE = "$(SRCROOT)/Credera-POC/App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
