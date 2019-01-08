@@ -53,13 +53,13 @@
                                     <action selector="continueButtonPressed:" destination="haO-iB-CR9" eventType="touchUpInside" id="uST-P2-699"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7L-Q1-Vxy">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7L-Q1-Vxy">
                                 <rect key="frame" x="30" y="693" width="45" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="Vhi-l7-Xjo"/>
                                     <constraint firstAttribute="height" constant="45" id="dBS-jP-41T"/>
                                 </constraints>
-                                <state key="normal" title="BACK IT UP"/>
+                                <state key="normal" title="backButton" image="backButton"/>
                                 <connections>
                                     <action selector="onBackPressed:" destination="haO-iB-CR9" eventType="touchUpInside" id="SHa-yq-jxj"/>
                                 </connections>
@@ -91,4 +91,7 @@
             <point key="canvasLocation" x="854.8828125" y="1689.84375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="backButton" width="45" height="45"/>
+    </resources>
 </document>
