@@ -13,7 +13,7 @@
         <!--Guest Name Input Controller-->
         <scene sceneID="4PE-En-VZx">
             <objects>
-                <viewController storyboardIdentifier="EmployeeSearchViewController" id="5RS-Ah-quA" customClass="GuestNameInputController" customModule="Credera_POC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="GuestNameInputController" storyboardIdentifier="GuestNameInputController" id="5RS-Ah-quA" customClass="GuestNameInputController" customModule="Credera_POC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UFt-LR-M3l">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,7 +50,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="continueButtonPressed:" destination="5RS-Ah-quA" eventType="touchUpInside" id="KAM-ts-NIC"/>
+                                    <action selector="continueButtonPressed:" destination="5RS-Ah-quA" eventType="touchUpInside" id="Vsp-SW-pL1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhC-N4-sX2">
@@ -61,7 +61,7 @@
                                 </constraints>
                                 <state key="normal" title="backButton" image="backButton"/>
                                 <connections>
-                                    <action selector="onBackPressed:" destination="5RS-Ah-quA" eventType="touchUpInside" id="mrZ-7e-ZfK"/>
+                                    <action selector="onBackPressed:" destination="5RS-Ah-quA" eventType="touchUpInside" id="R5p-h1-q2k"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -85,8 +85,6 @@
                         <outlet property="continueButton" destination="mHT-bK-HCr" id="Lpb-Kr-zeb"/>
                         <outlet property="inputLabel" destination="nz2-VU-VHY" id="a9T-O7-g0f"/>
                         <outlet property="nameTextField" destination="nOZ-iQ-aD7" id="gAA-OT-tU2"/>
-                        <outlet property="questionLabel" destination="nz2-VU-VHY" id="WK3-Dp-MZa"/>
-                        <outlet property="searchTextField" destination="nOZ-iQ-aD7" id="QMd-1F-00E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NhN-Q7-9su" userLabel="First Responder" sceneMemberID="firstResponder"/>

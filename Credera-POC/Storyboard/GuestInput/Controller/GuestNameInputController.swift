@@ -30,15 +30,28 @@ class GuestNameInputController: UIViewController {
     func setupUI() {
         nameTextField.borderStyle = UITextField.BorderStyle.roundedRect
         nameTextField.layer.borderColor = Constants.ColorScheme.warmGray.cgColor
-//        switch guestInputType {
-//
-//        }
+        switch guestInputType {
+        case .other:
+            inputLabel.text = "Please enter your name, and we will let someone know you're here."
+        default:
+            inputLabel.text = "No problem! Please enter your name."
+        }
         continueButton.layer.cornerRadius = 5
         continueButton.layer.borderWidth = 1
         continueButton.layer.borderColor = Constants.ColorScheme.warmGray.cgColor
         continueButton.isEnabled = false
         self.hideKeyboardWhenTappedAround()
     }
+    
+    @IBAction func continueButtonPressed(_ sender: Any) {
+        
+    }
+    
+    
+    @IBAction func onBackPressed(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+    }
+    
 
     
 
