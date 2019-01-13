@@ -76,9 +76,6 @@ class WelcomeScreenViewController: UIViewController {
         guestInputVC.guestInputType = .other
         navigationController?.pushViewController(guestInputVC, animated: true)
 
-//        let storyBoard : UIStoryboard = UIStoryboard(name: "ThankYou", bundle:nil)
-//        let thankYouVC = storyBoard.instantiateViewController(withIdentifier: "ThankYouViewController") as! ThankYouViewController
-//        self.navigationController?.pushViewController(thankYouVC, animated: true)
     }
 }
 
