@@ -56,7 +56,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pu-jz-PCz">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pu-jz-PCz" customClass="CustomButton" customModule="Credera_POC" customModuleProvider="target">
                                 <rect key="frame" x="282" y="319" width="460" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="Obd-vP-8cX"/>
@@ -70,7 +70,7 @@
                                     <action selector="interviewSelected:" destination="tyO-XV-UCG" eventType="touchUpInside" id="jN9-Zv-4oX"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odq-Gp-K0I">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="odq-Gp-K0I" customClass="CustomButton" customModule="Credera_POC" customModuleProvider="target">
                                 <rect key="frame" x="282" y="399" width="460" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="460" id="HET-1m-BAH"/>
@@ -84,7 +84,7 @@
                                     <action selector="meetingSelected:" destination="tyO-XV-UCG" eventType="touchUpInside" id="IXI-FB-xpI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pgm-J9-uMU">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pgm-J9-uMU" customClass="CustomButton" customModule="Credera_POC" customModuleProvider="target">
                                 <rect key="frame" x="282" y="479" width="460" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="7QH-8F-fkj"/>
@@ -98,7 +98,7 @@
                                     <action selector="specificPersonSelected:" destination="tyO-XV-UCG" eventType="touchUpInside" id="jgt-26-10K"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhh-vm-ihi">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhh-vm-ihi" customClass="CustomButton" customModule="Credera_POC" customModuleProvider="target">
                                 <rect key="frame" x="282" y="559" width="460" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="B4f-4y-W9N"/>
@@ -112,7 +112,7 @@
                                     <action selector="deliverySelected:" destination="tyO-XV-UCG" eventType="touchUpInside" id="aKW-aX-9cV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmx-qd-KGb">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmx-qd-KGb" customClass="CustomButton" customModule="Credera_POC" customModuleProvider="target">
                                 <rect key="frame" x="282" y="639" width="460" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="Qv1-7A-58V"/>

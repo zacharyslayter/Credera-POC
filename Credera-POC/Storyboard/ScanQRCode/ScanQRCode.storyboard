@@ -28,7 +28,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOT-YN-AUY">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOT-YN-AUY" customClass="CustomButton" customModule="Credera_POC" customModuleProvider="target">
                                 <rect key="frame" x="282" y="424" width="460" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="49" id="A4l-0l-03n"/>

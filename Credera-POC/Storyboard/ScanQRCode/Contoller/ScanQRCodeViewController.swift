@@ -11,20 +11,11 @@ import UIKit
 
 class ScanQRCodeViewController: UIViewController {
     
-    @IBOutlet var cantAccessCodeButton: UIButton!
+    @IBOutlet var cantAccessCodeButton: CustomButton!
     @IBOutlet var backButton: UIButton!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        
-        backButton.layer.cornerRadius = 5
-        cantAccessCodeButton.layer.cornerRadius = 5
-        
-        backButton.layer.borderWidth = 2
-        cantAccessCodeButton.layer.borderWidth = 2
-        
-        cantAccessCodeButton.layer.borderColor = Constants.ColorScheme.lipstick.cgColor
-        backButton.layer.borderColor = Constants.ColorScheme.lipstick.cgColor
     }
     
     override func viewDidLoad() {

@@ -13,7 +13,7 @@ class EmployeeSearchViewController: UIViewController {
 
     
     @IBOutlet var searchTextField: UITextField!
-    @IBOutlet weak var continueButton: UIButton!
+    @IBOutlet weak var continueButton: CustomButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,9 +30,8 @@ class EmployeeSearchViewController: UIViewController {
     func setupUI() {
         searchTextField.borderStyle = UITextField.BorderStyle.roundedRect
         searchTextField.layer.borderColor = Constants.ColorScheme.warmGray.cgColor
-        continueButton.layer.cornerRadius = 5
-        continueButton.layer.borderWidth = 1
-        continueButton.layer.borderColor = Constants.ColorScheme.warmGray.cgColor
+        continueButton.buttonColor = Constants.ColorScheme.warmGray.cgColor
+        continueButton.borderColor = Constants.ColorScheme.warmGray.cgColor
         continueButton.isEnabled = false
         self.hideKeyboardWhenTappedAround()
     }
@@ -55,10 +54,10 @@ extension EmployeeSearchViewController : UITextFieldDelegate {
         
         if textField == searchTextField {
             if !String(currentText).isEmpty {
-                continueButton.backgroundColor = Constants.ColorScheme.lipstick
+                continueButton.buttonColor = Constants.ColorScheme.lipstick.cgColor
                 continueButton.isEnabled = true
             } else {
-                continueButton.backgroundColor = Constants.ColorScheme.warmGray
+                continueButton.buttonColor = Constants.ColorScheme.warmGray.cgColor
                 continueButton.isEnabled = false
             }
         }
