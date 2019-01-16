@@ -46,7 +46,7 @@ class EmployeeSearchViewController: UIViewController {
         
         self.hideKeyboardWhenTappedAround()
         
-        //Temporary
+        //Temporary populate the search field
         searchTextField.filterStrings(["Natasha Solanki", "Zachary Slayter", "Melanie Cummings","Rachel West"])
     }
     
