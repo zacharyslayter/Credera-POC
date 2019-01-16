@@ -47,7 +47,9 @@ class EmployeeSearchViewController: UIViewController {
     }
     
     @IBAction func continueButtonPressed(_ sender: Any) {
-        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "ThankYou", bundle:nil)
+        let thankYouVC = storyBoard.instantiateViewController(withIdentifier: "ThankYouViewController") as! ThankYouViewController
+        self.navigationController?.pushViewController(thankYouVC, animated: true)
     }
 
     @IBAction func onBackPressed(_ sender: Any) {
