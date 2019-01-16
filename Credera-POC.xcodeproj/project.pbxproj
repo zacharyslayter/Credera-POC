@@ -29,6 +29,7 @@
 		5949D1C5219CBBAE006D2FF0 /* Credera_POCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5949D1C4219CBBAE006D2FF0 /* Credera_POCTests.swift */; };
 		5949D1D0219CBBAF006D2FF0 /* Credera_POCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5949D1CF219CBBAF006D2FF0 /* Credera_POCUITests.swift */; };
 		9C4C52AF66CA12EDB08789EF /* Pods_Credera_POC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C98E09547A52D9E4F315F20 /* Pods_Credera_POC.framework */; };
+		A42BD44221ED0F2C008BBCED /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42BD44121ED0F2C008BBCED /* CustomButton.swift */; };
 		A480A12721E4EB7000EA32E5 /* ErrorScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A480A12621E4EB7000EA32E5 /* ErrorScreen.storyboard */; };
 		A480A12C21E4EBF200EA32E5 /* ErrorScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A480A12B21E4EBF200EA32E5 /* ErrorScreenViewController.swift */; };
 		A480A13121E5018500EA32E5 /* ScanQRCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A480A13021E5018500EA32E5 /* ScanQRCode.storyboard */; };
@@ -89,6 +90,7 @@
 		776C2608FC32935341C444AC /* Pods_Credera_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Credera_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DE5EA2F7E2553C34C0ED366 /* Pods-Credera-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Credera-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Credera-iOS/Pods-Credera-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		9645AC57AFCE99B609B68B96 /* Pods_Credera_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Credera_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A42BD44121ED0F2C008BBCED /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		A480A12621E4EB7000EA32E5 /* ErrorScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ErrorScreen.storyboard; sourceTree = "<group>"; };
 		A480A12B21E4EBF200EA32E5 /* ErrorScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorScreenViewController.swift; sourceTree = "<group>"; };
 		A480A13021E5018500EA32E5 /* ScanQRCode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScanQRCode.storyboard; sourceTree = "<group>"; };
@@ -327,6 +329,7 @@
 		598E173D219CDA90002AC3EC /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				A42BD44121ED0F2C008BBCED /* CustomButton.swift */,
 				5910781A21DD21900017CA21 /* NavigationController+Transitions.swift */,
 				5910783121DD29E00017CA21 /* UIColor+Extension.swift */,
 			);
@@ -666,6 +669,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A42BD44221ED0F2C008BBCED /* CustomButton.swift in Sources */,
 				5910783521DD2AC40017CA21 /* FirstViewController.swift in Sources */,
 				5910781E21DD22770017CA21 /* WelcomeScreenViewController.swift in Sources */,
 				5910781B21DD21900017CA21 /* NavigationController+Transitions.swift in Sources */,
