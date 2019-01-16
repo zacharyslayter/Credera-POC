@@ -9,11 +9,14 @@
 import UIKit
 import Foundation
 
+
 class EmployeeSearchViewController: UIViewController {
 
     
     @IBOutlet var searchTextField: UITextField!
     @IBOutlet weak var continueButton: CustomButton!
+    @IBOutlet weak var questionLabel: UILabel!
+    public var searchType: Constants.visitPurpose = .specificPerson
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +33,16 @@ class EmployeeSearchViewController: UIViewController {
     func setupUI() {
         searchTextField.borderStyle = UITextField.BorderStyle.roundedRect
         searchTextField.layer.borderColor = Constants.ColorScheme.warmGray.cgColor
+
         continueButton.setEnabled(enabled: false)
+        
+        switch searchType {
+        case .delivery:
+            questionLabel.text = "Who is the recipent of your delivery?"
+        default:
+            questionLabel.text = "Who are you meeting with?"
+        }
+        
         self.hideKeyboardWhenTappedAround()
     }
     
