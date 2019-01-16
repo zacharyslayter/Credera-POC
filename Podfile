@@ -7,6 +7,8 @@ target 'Credera-POC' do
 
   # Pods for Credera-POC
   pod 'CocoaLumberjack/Swift', '3.4.2'
+  pod 'Fabric', '1.9.0'
+  pod 'Crashlytics', '3.12.0'
 
   target 'Credera-POCTests' do
     inherit! :search_paths
