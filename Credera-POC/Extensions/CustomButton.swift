@@ -69,7 +69,7 @@ class CustomButton: UIButton {
     
     func setEnabled(enabled: Bool) {
         self.setBorderColor(value: enabled ? Constants.ColorScheme.lipstick.cgColor : Constants.ColorScheme.warmGray.cgColor)
-        self.setButtonColor(value: enabled ? UIColor.white.cgColor : Constants.ColorScheme.warmGray.cgColor)
+        self.setButtonColor(value: enabled ? Constants.ColorScheme.lipstick.cgColor : Constants.ColorScheme.warmGray.cgColor)
         self.isEnabled = enabled
     }
 
