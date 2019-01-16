@@ -790,7 +790,70 @@
 			};
 			name = Debug;
 		};
-		5949D1D3219CBBAF006D2FF0 /* Release */ = {
+		5949D1D5219CBBAF006D2FF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD703FA7CFEAB1208AB8AFE8 /* Pods-Credera-POC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7CUS9P87CD;
+				INFOPLIST_FILE = "$(SRCROOT)/Credera-POC/App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.credera.mobile.Credera-POC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5949D1D8219CBBAF006D2FF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E19EB5C49748403CAF262665 /* Pods-Credera-POCTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HPYS5PBF55;
+				INFOPLIST_FILE = "Credera-iOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.credera.mobile.Credera-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Credera-POC.app/Credera-POC";
+			};
+			name = Debug;
+		};
+		5949D1DB219CBBAF006D2FF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0ECD9547B805E1A4F7BBD886 /* Pods-Credera-POCUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HPYS5PBF55;
+				INFOPLIST_FILE = "Credera-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.credera.mobile.Credera-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Credera-iOS";
+			};
+			name = Debug;
+		};
+		A42BD44721EF7DF2008BBCED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -845,27 +908,7 @@
 			};
 			name = Release;
 		};
-		5949D1D5219CBBAF006D2FF0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD703FA7CFEAB1208AB8AFE8 /* Pods-Credera-POC.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7CUS9P87CD;
-				INFOPLIST_FILE = "$(SRCROOT)/Credera-POC/App/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.credera.mobile.Credera-POC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		5949D1D6219CBBAF006D2FF0 /* Release */ = {
+		A42BD44821EF7DF2008BBCED /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 113B30E6AC1F7798CBA4AAD8 /* Pods-Credera-POC.release.xcconfig */;
 			buildSettings = {
@@ -885,29 +928,7 @@
 			};
 			name = Release;
 		};
-		5949D1D8219CBBAF006D2FF0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E19EB5C49748403CAF262665 /* Pods-Credera-POCTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HPYS5PBF55;
-				INFOPLIST_FILE = "Credera-iOSTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.credera.mobile.Credera-iOSTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Credera-POC.app/Credera-POC";
-			};
-			name = Debug;
-		};
-		5949D1D9219CBBAF006D2FF0 /* Release */ = {
+		A42BD44921EF7DF2008BBCED /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B38FA4083BC15F623697D470 /* Pods-Credera-POCTests.release.xcconfig */;
 			buildSettings = {
@@ -929,28 +950,7 @@
 			};
 			name = Release;
 		};
-		5949D1DB219CBBAF006D2FF0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0ECD9547B805E1A4F7BBD886 /* Pods-Credera-POCUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HPYS5PBF55;
-				INFOPLIST_FILE = "Credera-iOSUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.credera.mobile.Credera-iOSUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Credera-iOS";
-			};
-			name = Debug;
-		};
-		5949D1DC219CBBAF006D2FF0 /* Release */ = {
+		A42BD44A21EF7DF2008BBCED /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CE3D65C0BBA22D3F471C43BA /* Pods-Credera-POCUITests.release.xcconfig */;
 			buildSettings = {
@@ -978,37 +978,37 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5949D1D2219CBBAF006D2FF0 /* Debug */,
-				5949D1D3219CBBAF006D2FF0 /* Release */,
+				A42BD44721EF7DF2008BBCED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		5949D1D4219CBBAF006D2FF0 /* Build configuration list for PBXNativeTarget "Credera-POC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5949D1D5219CBBAF006D2FF0 /* Debug */,
-				5949D1D6219CBBAF006D2FF0 /* Release */,
+				A42BD44821EF7DF2008BBCED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		5949D1D7219CBBAF006D2FF0 /* Build configuration list for PBXNativeTarget "Credera-POCTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5949D1D8219CBBAF006D2FF0 /* Debug */,
-				5949D1D9219CBBAF006D2FF0 /* Release */,
+				A42BD44921EF7DF2008BBCED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		5949D1DA219CBBAF006D2FF0 /* Build configuration list for PBXNativeTarget "Credera-POCUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5949D1DB219CBBAF006D2FF0 /* Debug */,
-				5949D1DC219CBBAF006D2FF0 /* Release */,
+				A42BD44A21EF7DF2008BBCED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
