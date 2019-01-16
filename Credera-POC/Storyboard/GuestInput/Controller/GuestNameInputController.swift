@@ -1,72 +1,76 @@
 //
-//  EmployeeSearchViewController.swift
+//  GuestNameInputController.swift
 //  Credera-POC
 //
-//  Created by Natasha Solanki on 1/7/19.
+//  Created by Natasha Solanki on 1/8/19.
 //  Copyright © 2019 Credera. All rights reserved.
 //
 
 import UIKit
 import Foundation
 
+class GuestNameInputController: UIViewController {
 
-class EmployeeSearchViewController: UIViewController {
-
-    
-    @IBOutlet var searchTextField: UITextField!
-    @IBOutlet weak var continueButton: CustomButton!
-    @IBOutlet weak var questionLabel: UILabel!
-    public var searchType: Constants.visitPurpose = .specificPerson
+    @IBOutlet weak var inputLabel: UILabel!
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var continueButton: UIButton!
+    public var guestInputType: Constants.visitPurpose = .interview
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        searchTextField.delegate = self
-        NotificationCenter.default.addObserver(self, selector: #selector(EmployeeSearchViewController.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(EmployeeSearchViewController.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        nameTextField.delegate = self
+        NotificationCenter.default.addObserver(self, selector: #selector(GuestNameInputController.keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(GuestNameInputController.keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         setupUI()
     }
-    
     func setupUI() {
-        searchTextField.borderStyle = UITextField.BorderStyle.roundedRect
-        searchTextField.layer.borderColor = Constants.ColorScheme.warmGray.cgColor
-        continueButton.buttonColor = Constants.ColorScheme.warmGray.cgColor
-        continueButton.borderColor = Constants.ColorScheme.warmGray.cgColor
-        switch searchType {
-        case .delivery:
-            questionLabel.text = "Who is the recipent of your delivery?"
+        nameTextField.borderStyle = UITextField.BorderStyle.roundedRect
+        nameTextField.layer.borderColor = Constants.ColorScheme.warmGray.cgColor
+        switch guestInputType {
+        case .other:
+            inputLabel.text = "Please enter your name, and we will let someone know you're here."
         default:
-            questionLabel.text = "Who are you meeting with?"
+            inputLabel.text = "No problem! Please enter your name."
         }
+        continueButton.layer.cornerRadius = 5
+        continueButton.layer.borderWidth = 1
+        continueButton.layer.borderColor = Constants.ColorScheme.warmGray.cgColor
         continueButton.isEnabled = false
         self.hideKeyboardWhenTappedAround()
     }
     
     @IBAction func continueButtonPressed(_ sender: Any) {
-        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "ThankYou", bundle:nil)
+        let thankYouVC = storyBoard.instantiateViewController(withIdentifier: "ThankYouViewController") as! ThankYouViewController
+    self.navigationController?.pushViewController(thankYouVC, animated: true)
     }
-
+    
+    
     @IBAction func onBackPressed(_ sender: Any) {
         navigationController?.popViewController(animated: true)
     }
-}
+    
 
-extension EmployeeSearchViewController : UITextFieldDelegate {
+    
+
+}
+extension GuestNameInputController : UITextFieldDelegate {
     
     public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         
         var currentText: NSString = textField.text as NSString? ?? ""
         currentText = currentText.replacingCharacters(in: range, with: string) as NSString
         
-        if textField == searchTextField {
+        if textField == nameTextField {
             if !String(currentText).isEmpty {
-                continueButton.buttonColor = Constants.ColorScheme.lipstick.cgColor
+                continueButton.backgroundColor = Constants.ColorScheme.lipstick
                 continueButton.isEnabled = true
             } else {
-                continueButton.buttonColor = Constants.ColorScheme.warmGray.cgColor
+                continueButton.backgroundColor = Constants.ColorScheme.warmGray
                 continueButton.isEnabled = false
             }
         }
@@ -81,8 +85,8 @@ extension EmployeeSearchViewController : UITextFieldDelegate {
     
 }
 
-extension EmployeeSearchViewController {
-
+extension GuestNameInputController {
+    
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(EmployeeSearchViewController.dismissKeyboard))
         tap.cancelsTouchesInView = false
@@ -100,13 +104,12 @@ extension EmployeeSearchViewController {
             }
         }
     }
-        
+    
     
     @objc func keyboardWillHide(notification: NSNotification) {
         if self.view.frame.origin.y != 0 {
             self.view.frame.origin.y = 0
         }
     }
-
+    
 }
-

@@ -25,4 +25,13 @@ class Constants {
         static let warmGray = UIColor(red: 155, green: 155, blue: 155)
     }
     
+    enum visitPurpose: Int {
+        case interview
+        case meeting
+        case specificPerson
+        case delivery
+        case other
+    }
+
+    
 }
