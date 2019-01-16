@@ -47,7 +47,13 @@ class EmployeeSearchViewController: UIViewController {
         self.hideKeyboardWhenTappedAround()
         
         //Temporary populate the search field
-        searchTextField.filterStrings(["Natasha Solanki", "Zachary Slayter", "Melanie Cummings","Rachel West"])
+        searchTextField.filterStrings(["Natasha Solanki", "Zachary Slayter", "Melanie Cummings","Rachel West", "Taylor Marley", "Ash Grewal", "Cody Case", "Scott Covington", "Jake Carter", "Phil Lockhart", "Aaron Wolin", "Josh Hamit", "TJ Paterick", "Ryan Salinger", "Mason Everett", "Justin Miller", "Erica Niwa", "Jonathan Williamson", "Morgan Monzingo"])
+        searchTextField.theme.cellHeight = 49
+        searchTextField.maxNumberOfResults = 6
+        searchTextField.theme.font = searchTextField.font ?? UIFont.systemFont(ofSize: 12)
+        searchTextField.theme.separatorColor = UIColor.clear
+        searchTextField.theme.bgColor = UIColor.white
+
     }
     
     @IBAction func continueButtonPressed(_ sender: Any) {
