@@ -13,7 +13,7 @@ class GuestNameInputController: UIViewController {
 
     @IBOutlet weak var inputLabel: UILabel!
     @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var continueButton: UIButton!
+    @IBOutlet weak var continueButton: CustomButton!
     public var guestInputType: Constants.visitPurpose = .interview
     
     override func viewDidLoad() {
@@ -30,23 +30,22 @@ class GuestNameInputController: UIViewController {
     func setupUI() {
         nameTextField.borderStyle = UITextField.BorderStyle.roundedRect
         nameTextField.layer.borderColor = Constants.ColorScheme.warmGray.cgColor
+        
         switch guestInputType {
         case .other:
             inputLabel.text = "Please enter your name, and we will let someone know you're here."
         default:
             inputLabel.text = "No problem! Please enter your name."
         }
-        continueButton.layer.cornerRadius = 5
-        continueButton.layer.borderWidth = 1
-        continueButton.layer.borderColor = Constants.ColorScheme.warmGray.cgColor
-        continueButton.isEnabled = false
+
+        continueButton.setEnabled(enabled: false)
         self.hideKeyboardWhenTappedAround()
     }
     
     @IBAction func continueButtonPressed(_ sender: Any) {
         let storyBoard : UIStoryboard = UIStoryboard(name: "ThankYou", bundle:nil)
         let thankYouVC = storyBoard.instantiateViewController(withIdentifier: "ThankYouViewController") as! ThankYouViewController
-    self.navigationController?.pushViewController(thankYouVC, animated: true)
+        self.navigationController?.pushViewController(thankYouVC, animated: true)
     }
     
     
@@ -67,11 +66,9 @@ extension GuestNameInputController : UITextFieldDelegate {
         
         if textField == nameTextField {
             if !String(currentText).isEmpty {
-                continueButton.backgroundColor = Constants.ColorScheme.lipstick
-                continueButton.isEnabled = true
+                continueButton.setEnabled(enabled: true)
             } else {
-                continueButton.backgroundColor = Constants.ColorScheme.warmGray
-                continueButton.isEnabled = false
+                continueButton.setEnabled(enabled: false)
             }
         }
         

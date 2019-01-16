@@ -11,15 +11,10 @@ import UIKit
 
 class ThankYouViewController: UIViewController {
 	
-	
-	@IBOutlet var backButton: UIButton!
+	@IBOutlet var backButton: CustomButton!
 	
 	override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(true)
-		
-		backButton.layer.borderColor = Constants.ColorScheme.lipstick.cgColor
-		backButton.layer.borderWidth = 2
-		backButton.layer.cornerRadius = 5
 	}
 	
 	override func viewDidLoad() {

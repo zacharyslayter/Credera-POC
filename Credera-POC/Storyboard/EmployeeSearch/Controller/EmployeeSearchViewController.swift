@@ -15,7 +15,7 @@ class EmployeeSearchViewController: UIViewController {
 
     
     @IBOutlet var searchTextField: SearchTextField!
-    @IBOutlet weak var continueButton: UIButton!
+    @IBOutlet weak var continueButton: CustomButton!
     @IBOutlet weak var questionLabel: UILabel!
     public var searchType: Constants.visitPurpose = .specificPerson
     
@@ -34,16 +34,16 @@ class EmployeeSearchViewController: UIViewController {
     func setupUI() {
         searchTextField.borderStyle = UITextField.BorderStyle.roundedRect
         searchTextField.layer.borderColor = Constants.ColorScheme.warmGray.cgColor
+
+        continueButton.setEnabled(enabled: false)
+        
         switch searchType {
         case .delivery:
             questionLabel.text = "Who is the recipent of your delivery?"
         default:
             questionLabel.text = "Who are you meeting with?"
         }
-        continueButton.layer.cornerRadius = 5
-        continueButton.layer.borderWidth = 1
-        continueButton.layer.borderColor = Constants.ColorScheme.warmGray.cgColor
-        continueButton.isEnabled = false
+        
         self.hideKeyboardWhenTappedAround()
         
         //Temporary
@@ -51,7 +51,9 @@ class EmployeeSearchViewController: UIViewController {
     }
     
     @IBAction func continueButtonPressed(_ sender: Any) {
-        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "ThankYou", bundle:nil)
+        let thankYouVC = storyBoard.instantiateViewController(withIdentifier: "ThankYouViewController") as! ThankYouViewController
+        self.navigationController?.pushViewController(thankYouVC, animated: true)
     }
 
     @IBAction func onBackPressed(_ sender: Any) {
@@ -68,11 +70,9 @@ extension EmployeeSearchViewController : UITextFieldDelegate {
         
         if textField == searchTextField {
             if !String(currentText).isEmpty {
-                continueButton.backgroundColor = Constants.ColorScheme.lipstick
-                continueButton.isEnabled = true
+                continueButton.setEnabled(enabled: true)
             } else {
-                continueButton.backgroundColor = Constants.ColorScheme.warmGray
-                continueButton.isEnabled = false
+                continueButton.setEnabled(enabled: false)
             }
         }
         

@@ -11,20 +11,11 @@ import UIKit
 
 class ErrorScreenViewController: UIViewController {
     
-    @IBOutlet var backToHomeButton: UIButton!
+    @IBOutlet var backToHomeButton: CustomButton!
     @IBOutlet var backButton: UIButton!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        
-        backButton.layer.cornerRadius = 5
-        backToHomeButton.layer.cornerRadius = 5
-        
-        backButton.layer.borderWidth = 2
-        backToHomeButton.layer.borderWidth = 2
-        
-        backToHomeButton.layer.borderColor = Constants.ColorScheme.lipstick.cgColor
-        backButton.layer.borderColor = Constants.ColorScheme.lipstick.cgColor
     }
     
     override func viewDidLoad() {
