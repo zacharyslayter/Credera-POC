@@ -7,6 +7,7 @@ target 'Credera-POC' do
 
   # Pods for Credera-POC
   pod 'CocoaLumberjack/Swift', '3.4.2'
+  pod 'SearchTextField'
 
   target 'Credera-POCTests' do
     inherit! :search_paths

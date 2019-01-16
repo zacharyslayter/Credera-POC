@@ -8,12 +8,13 @@
 
 import UIKit
 import Foundation
+import SearchTextField
 
 
 class EmployeeSearchViewController: UIViewController {
 
     
-    @IBOutlet var searchTextField: UITextField!
+    @IBOutlet var searchTextField: SearchTextField!
     @IBOutlet weak var continueButton: UIButton!
     @IBOutlet weak var questionLabel: UILabel!
     public var searchType: Constants.visitPurpose = .specificPerson
@@ -44,6 +45,9 @@ class EmployeeSearchViewController: UIViewController {
         continueButton.layer.borderColor = Constants.ColorScheme.warmGray.cgColor
         continueButton.isEnabled = false
         self.hideKeyboardWhenTappedAround()
+        
+        //Temporary
+        searchTextField.filterStrings(["Natasha Solanki", "Zachary Slayter", "Melanie Cummings","Rachel West"])
     }
     
     @IBAction func continueButtonPressed(_ sender: Any) {
@@ -81,6 +85,8 @@ extension EmployeeSearchViewController : UITextFieldDelegate {
     }
     
 }
+
+
 
 extension EmployeeSearchViewController {
 
