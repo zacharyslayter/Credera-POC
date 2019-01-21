@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rUP-nF-5XY">
-    <device id="retina4_7" orientation="portrait">
+    <device id="ipad9_7" orientation="landscape">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,7 +16,7 @@
                 <navigationController id="rUP-nF-5XY" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="First" image="First" id="icp-ac-2vm"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wOU-eu-dog">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="1024" height="50"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZB0-3w-OUa">
@@ -33,13 +33,13 @@
         <!--First View Controller-->
         <scene sceneID="24B-jy-0lI">
             <objects>
-                <viewController storyboardIdentifier="FirstViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XI3-Hc-Dgg" customClass="FirstViewController" customModule="Credera_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FirstViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="XI3-Hc-Dgg" customClass="FirstViewController" customModule="Credera_POC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LQI-XV-05T">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MainTabBarApp: FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9s-uW-QC1">
-                                <rect key="frame" x="88" y="313" width="199" height="41"/>
+                                <rect key="frame" x="88" y="363.5" width="848" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="O4c-VL-JCa"/>
                                 </constraints>
@@ -47,12 +47,25 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N5b-WC-tXM">
+                                <rect key="frame" x="20" y="689" width="117" height="59"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="F64-Kx-mqR"/>
+                                    <constraint firstAttribute="height" constant="59" id="ZHf-O9-z7m"/>
+                                </constraints>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="onBackPressed:" destination="XI3-Hc-Dgg" eventType="touchUpInside" id="FaI-XR-5BT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Z9s-uW-QC1" firstAttribute="centerX" secondItem="LQI-XV-05T" secondAttribute="centerX" id="Lf5-mB-gSG"/>
                             <constraint firstItem="Z9s-uW-QC1" firstAttribute="leading" secondItem="vNy-5f-uXM" secondAttribute="leading" constant="88" id="PiU-hw-vas"/>
                             <constraint firstItem="Z9s-uW-QC1" firstAttribute="centerY" secondItem="LQI-XV-05T" secondAttribute="centerY" id="Ym1-h9-ICc"/>
+                            <constraint firstItem="N5b-WC-tXM" firstAttribute="leading" secondItem="vNy-5f-uXM" secondAttribute="leading" constant="20" id="dDO-Pl-fyU"/>
+                            <constraint firstItem="vNy-5f-uXM" firstAttribute="bottom" secondItem="N5b-WC-tXM" secondAttribute="bottom" constant="20" id="mOQ-sO-YGn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vNy-5f-uXM"/>
                     </view>
@@ -60,7 +73,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dr9-l3-H5Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="541.60000000000002" y="-223.53823088455775"/>
+            <point key="canvasLocation" x="541.40625" y="-224.21875"/>
         </scene>
     </scenes>
     <resources>

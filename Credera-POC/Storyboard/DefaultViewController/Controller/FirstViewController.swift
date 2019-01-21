@@ -12,10 +12,11 @@ import UIKit
 class FirstViewController: UIViewController {
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        self.navigationItem.titleView = AppHeaderView()
-        
+        super.viewDidLoad()        
+    }
+    
+    @IBAction func onBackPressed(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
     }
     
 }

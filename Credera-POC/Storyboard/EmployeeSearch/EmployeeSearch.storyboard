@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Employee Search View Controller-->
+        <scene sceneID="SIu-7d-K7s">
+            <objects>
+                <viewController storyboardIdentifier="EmployeeSearchViewController" id="haO-iB-CR9" customClass="EmployeeSearchViewController" customModule="Credera_POC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gwl-ez-bjT">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Who are you meeting with?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lme-QQ-v5p">
+                                <rect key="frame" x="132" y="219" width="761" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="i8G-ar-rLK"/>
+                                    <constraint firstAttribute="width" constant="761" id="uAs-up-xOH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter full name" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="HjD-uO-ZSf" customClass="SearchTextField" customModule="SearchTextField">
+                                <rect key="frame" x="282" y="348" width="460" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="460" id="S5o-wr-yQt"/>
+                                    <constraint firstAttribute="height" constant="49" id="atL-Ki-O1Y"/>
+                                </constraints>
+                                <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Te-NO-U0O" customClass="CustomButton" customModule="Credera_POC" customModuleProvider="target">
+                                <rect key="frame" x="282" y="433" width="460" height="49"/>
+                                <color key="backgroundColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="3BT-k4-5VV"/>
+                                    <constraint firstAttribute="width" constant="460" id="sZ2-64-Vyl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="16"/>
+                                <state key="normal" title="CONTINUE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="continueButtonPressed:" destination="haO-iB-CR9" eventType="touchUpInside" id="uST-P2-699"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7L-Q1-Vxy">
+                                <rect key="frame" x="30" y="693" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="Vhi-l7-Xjo"/>
+                                    <constraint firstAttribute="height" constant="45" id="dBS-jP-41T"/>
+                                </constraints>
+                                <state key="normal" title="backButton" image="backButton"/>
+                                <connections>
+                                    <action selector="onBackPressed:" destination="haO-iB-CR9" eventType="touchUpInside" id="SHa-yq-jxj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lme-QQ-v5p" firstAttribute="top" secondItem="p0o-Vr-4hR" secondAttribute="top" constant="199" id="3j5-eZ-jak"/>
+                            <constraint firstItem="2Te-NO-U0O" firstAttribute="leading" secondItem="p0o-Vr-4hR" secondAttribute="leading" constant="282" id="4CA-ur-qe1"/>
+                            <constraint firstItem="HjD-uO-ZSf" firstAttribute="leading" secondItem="p0o-Vr-4hR" secondAttribute="leading" constant="282" id="BLY-zi-xwi"/>
+                            <constraint firstItem="2Te-NO-U0O" firstAttribute="top" secondItem="HjD-uO-ZSf" secondAttribute="bottom" constant="36" id="Cv8-P9-rqP"/>
+                            <constraint firstItem="HjD-uO-ZSf" firstAttribute="top" secondItem="lme-QQ-v5p" secondAttribute="bottom" constant="57" id="J0l-BN-lxj"/>
+                            <constraint firstItem="p0o-Vr-4hR" firstAttribute="trailing" secondItem="HjD-uO-ZSf" secondAttribute="trailing" constant="282" id="Yx1-tz-MhC"/>
+                            <constraint firstItem="R7L-Q1-Vxy" firstAttribute="leading" secondItem="p0o-Vr-4hR" secondAttribute="leading" constant="30" id="ZNM-Ok-Qmb"/>
+                            <constraint firstItem="p0o-Vr-4hR" firstAttribute="trailing" secondItem="2Te-NO-U0O" secondAttribute="trailing" constant="282" id="grY-Eh-aL6"/>
+                            <constraint firstItem="lme-QQ-v5p" firstAttribute="leading" secondItem="p0o-Vr-4hR" secondAttribute="leading" constant="132" id="klp-3p-EJ2"/>
+                            <constraint firstItem="p0o-Vr-4hR" firstAttribute="bottom" secondItem="R7L-Q1-Vxy" secondAttribute="bottom" constant="30" id="nRO-UE-fvM"/>
+                            <constraint firstItem="p0o-Vr-4hR" firstAttribute="trailing" secondItem="lme-QQ-v5p" secondAttribute="trailing" constant="131" id="zcJ-IT-jRl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="p0o-Vr-4hR"/>
+                    </view>
+                    <connections>
+                        <outlet property="continueButton" destination="2Te-NO-U0O" id="bcD-Z1-07h"/>
+                        <outlet property="questionLabel" destination="lme-QQ-v5p" id="tI0-V4-C5U"/>
+                        <outlet property="searchTextField" destination="HjD-uO-ZSf" id="cBN-7x-zbw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cl7-cJ-I1U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="854.8828125" y="1689.84375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backButton" width="45" height="45"/>
+    </resources>
+</document>
